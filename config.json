@@ -1,0 +1,14 @@
+{
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"HomepageFile": "./custom_html/first.htm",
+	"AdditionalRoutes": {
+		"/test": "./custom_html/test.htm",
+		"/streamming": "./custom_html/player.htm",
+		"/sessionList": "./custom_html/sessionList.htm",
+		"/session": "./custom_html/session.htm"
+	}
+}

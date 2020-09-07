@@ -1,0 +1,218 @@
+body {
+  background: #0f2027; /* fallback for old browsers */
+  background: linear-gradient(to right,#2c5364, #203a43, #0f2027);
+  justify-content: center;
+  align-items: center;
+}
+
+.middleArrange-container{ 
+    width: 100%; 
+    height: 100vh; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-align: center; 
+    -ms-flex-align: center; 
+    align-items: center; 
+    -webkit-box-pack: center; 
+    -ms-flex-pack: center; 
+    justify-content: center; 
+}
+
+.middleArrange-container2{ 
+
+  width: 100%; 
+  
+  display: flex; 
+  -webkit-box-align: center; 
+  -ms-flex-align: center; 
+  justify-content: center; 
+
+}
+
+.titlebox{
+    text-align: center;
+    padding:2em;
+}
+
+.navbar {
+    background: black;
+    margin: 0; padding: 0;
+    list-style: none;
+    /*position: fixed;*/
+    width: 100%;
+  }
+  .navbar>li {
+    display: inline-block;
+    
+  }
+  .navbar>li>a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    float: right;
+  }
+  .navbar>li>a:hover {
+    background: gray;
+  }
+
+  .basic-button{
+    background-color: black;
+    color: white;
+  }
+
+  .basic-button:hover {
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+  }
+
+  table,
+  td {
+    border: 1px solid #333;
+  }
+
+  thead,
+  tfoot {
+    background-color: #333;
+    color: #fff;
+  }
+
+  tr:hover{
+
+    background-color: black;
+    color: white;
+  }
+
+  .sessionInfo-input{
+    font-size: 20px;
+  }
+
+.swal-button 
+{
+	background-color: #FFB2D9;
+	font-size: 12px;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.where {
+  display: block;
+  margin: 25px 15px;
+  font-size: 11px;
+  color: #000;
+  text-decoration: none;
+  font-family: verdana;
+  font-style: italic;
+}
+
+.textbox {position: relative; width: 200px; margin: 15px}
+
+.textbox label {
+  position: absolute;
+  top: 0px;  /* input 요소의 border-top 설정값 만큼 */
+  left: 1px;  /* input 요소의 border-left 설정값 만큼 */
+  padding: .8em .5em;  /* input 요소의 padding 값 만큼 */
+  color: #999;
+  cursor: text;
+}
+
+.textbox input[type="text"] {
+  width: 100%;  /* 원하는 너비 설정 */ 
+  height: auto;  /* 높이값 초기화 */
+  line-height : normal;  /* line-height 초기화 */
+  padding: .8em .5em; /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+  border: 1px solid #999;
+  border-radius: 0;  /* iSO 둥근모서리 제거 */
+  outline-style: none;  /* 포커스시 발생하는 효과 제거를 원한다면 */
+  -webkit-appearance: none;  /* 브라우저별 기본 스타일링 제거 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#sessionName-input:hover {
+  border-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext');
+
+.text-center{
+	color:#fff;	
+	text-transform:uppercase;
+    font-size: 23px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+.box{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.89);
+	border-radius:3px;
+  padding:70px 100px;
+  border: white solid 2px;
+}
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+    pointer-event:none;
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid white;	
+}
+.btn{
+	color:black;
+	background-color: white;
+	outline: none;
+    border: 3px;
+    color: black;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:50px;
+	border-radius:2px;
+	cursor:pointer;
+  position:relative;
+  font: bolder;
+}
+
+.btn:hover{
+  color: white;
+  background-color: black;
+  border: solid white 2px;
+}
+/* .btn:after{
+	content:"";
+	position:absolute;
+	background:rgba(0,0,0,0.50);
+	top:0;
+	right:0;
+	width:100%;
+	height:100%;
+} */
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+}

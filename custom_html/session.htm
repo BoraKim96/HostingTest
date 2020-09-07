@@ -1,0 +1,60 @@
+<!-- Copyright Epic Games, Inc. All Rights Reserved. -->
+<!-- SessionList Html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link type="text/css" rel="stylesheet" href="vtf.css">
+    <link type="text/css" rel="stylesheet" href="player.css">
+    <script type="text/javascript" src="scripts/vtf.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <title>가상훈련 공통프레임워크 세션리스트</title>
+</head>
+<script type="text/javascript" src="http://l2.io/ip.js?var=myip"></script>
+
+<script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<body style="margin: 0; background-color: white;">
+    <!-- top-section/ Banner Bar 부분 -->
+    <div id="top-section" style="width: 100%;">
+        <ul class="navbar" style="height: 100%;">
+            <li style="float: right;"><a href="/test">로그인</a></li>
+            <li style="float: right;" onclick="openStreamming()"><a href="/sessionList">세션 목록</a></li>
+            <li style="float: right;"><a href="/session">세션 생성</a></li>
+            <li><a href="/">가상훈련 공통프레임 워크</a></li>
+        </ul>
+    </div>
+
+    <div id="middle-section" style="width: 100%; height: 100%; background-color: white; text-align: center;">
+
+        <div style="width: 100%; height: 100%;" class="middleArrange-container2">
+           
+        </div>
+        <!-- <수정 부분 -->
+        <div class="box">
+            <!-- <h1> 새로운 훈련 세션 생성</h1> -->
+            <form>
+                <span class="text-center" style="font-size: 24px;">새로운 훈련 세션 생성</span>
+                <div class="input-container">
+                    <input type="text" id="sessionName-input" required="" />
+                    <label>세션 이름</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="sessionDescription-input" required="" />
+                    <label>시나리오 설명</label>
+                </div>
+                <button type="button" class="btn" onclick="createSession()" class="basic-button"
+                    style="width: 180px; height: 50px; font-size: 16px;">세션 생성</button>
+            </form>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+09:14:24.729 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"HomepageFile": "./custom_html/first.htm",
+	"AdditionalRoutes": {
+		"/test": "./custom_html/test.htm",
+		"/streamming": "./custom_html/player.htm",
+		"/sessionList": "./custom_html/sessionList.htm",
+		"/session": "./custom_html/session.htm"
+	}
+}
+09:14:24.731 No --PixelStreamingMonitorPort specified (or is 0). Running unmonitored.
+09:14:24.789 Adding additional routes "/test" -> "./custom_html/test.htm"
+09:14:24.790 Adding additional routes "/streamming" -> "./custom_html/player.htm"
+09:14:24.790 Adding additional routes "/sessionList" -> "./custom_html/sessionList.htm"
+09:14:24.791 Adding additional routes "/session" -> "./custom_html/session.htm"
+09:14:24.811 WebSocket listening to Streamer connections on :8888
+09:14:24.811 WebSocket listening to Players connections on :80
+09:14:24.813 Http listening on *: 80
+11:31:24.957 Streamer connected: ::ffff:127.0.0.1
+11:32:03.554 Streamer connected: ::ffff:127.0.0.1
+11:32:27.028 Streamer connected: ::ffff:127.0.0.1
+11:33:39.165 Streamer connected: ::ffff:127.0.0.1
+11:34:20.123 Streamer connected: ::ffff:127.0.0.1

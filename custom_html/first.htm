@@ -1,0 +1,51 @@
+<!-- Copyright Epic Games, Inc. All Rights Reserved. -->
+<!-- UE4 4.25.3-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+	<link type="text/css" rel="stylesheet" href="player.css">
+	<link type="text/css" rel="stylesheet" href="vtf.css">
+	<script type="text/javascript" src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+	<script type="text/javascript" src="scripts/webRtcPlayer.js"></script>
+	<script type="text/javascript" src="scripts/vtf.js"></script>
+</head>
+
+<body>
+	<!-- top-section/ Banner Bar 부분 -->
+	<div id="top-section" style="width: 100%;">
+		<ul class="navbar" style="height: 100%;">
+			<li style="float: right;"><a href="/test">로그인</a></li>
+			<li style="float: right;" onclick="openStreamming()"><a href="/sessionList">세션 목록</a></li>
+			<li style="float: right;" onclick="createSession()"><a href="/session">세션 생성</a></li>
+			<li><a href="/">가상훈련 공통프레임 워크</a></li>
+		</ul>
+	</div>
+
+	<div id="middle-section">
+
+		<!-- firstPage-div 부분 -->
+		<div id="firstPage-div" class="middleArrange-container">
+			<div class="titlebox" style="font-size: 60px; font-weight: bolder; background-color: black; border: white 2px solid; color: white;">
+				가상훈련 공통프레임 워크<br>Virtual Training Framework<br><br>
+			</div>
+		</div>
+    </div>
+    
+    	<!-- session-div 부분  -->
+    <div id="session-div" style="display: none; width: 100%; height: 80%; background-color: white;">
+        <div id="sessionName-input" class="middleArrange-container">
+            <div>
+            <h1>Session 이름 : </h1><input type="text" name="session-name"style="font-size: 40px;">
+            </div>
+            <button class="basic-button" style="font-size: 30px;"> 세션 생성 </button>
+        </div>
+
+    </div>
+</body>
+
+</html>

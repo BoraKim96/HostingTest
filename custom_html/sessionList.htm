@@ -1,0 +1,67 @@
+<!-- Copyright Epic Games, Inc. All Rights Reserved. -->
+<!-- SessionList Html-->
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link type="text/css" rel="stylesheet" href="vtf.css">
+    <link type="text/css" rel="stylesheet" href="player.css">
+    <script type="text/javascript" src="scripts/vtf.js"></script>
+    <title>가상훈련 공통프레임워크 세션리스트</title>
+</head>
+
+<script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" ></script>
+
+<body style="margin: 0; background-color: white;" onload="getData()">
+    <!-- top-section/ Banner Bar 부분 -->
+    <div id="top-section" style="width: 100%;">
+        <ul class="navbar" style="height: 100%;">
+            <li style="float: right;"><a href="/test">로그인</a></li>
+            <li style="float: right;" onclick="openStreamming()"><a href="/sessionList">세션 목록</a></li>
+            <li style="float: right;"><a href=/session>세션 생성</a></li>
+            <li><a href="/">가상훈련 공통프레임 워크</a></li>
+        </ul>
+    </div>
+
+    <div id="middle-section" style="width: 100%; height: 100%; text-align: center;">
+
+        <div style="width: 100%; height: 100%; color: white;">
+            <h1> 훈련 가능한 세션 목록</h1>
+        </div>
+        <div id="sessionList-div" class="middleArrange-container2">
+            <table id="session-table" style="width: 50%;">
+                <thead style="font-size: 20px; background-color: white; color: black;">
+                    <tr style="background-color: black; color: white;">
+                        <th id="session-name" colspan="1"> 세션 이름 </th>
+                        <th id="session-ip" colspan="1"> 세션 정보 </th>
+                        <!-- <th id="session-info" colspan="1"> 접속 가능 여부 </th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr id="192.168.10.88">
+                        <td>RBX</td>
+                        <td>군사 훈련을 위한 세션</td>
+                        <td>192.168.10.88</td>
+                    </tr> -->
+                </tbody>
+            </table> 
+        </div> 
+
+        <div style="height: 10px;"></div>
+        <h3 id="displayState" style="display: none;">TEXT</h3>
+        <div style="height: 20px;">  </div>
+        <button id="btn-stream" class="basic-button" style="width: 180px; height: 50px; font-size: 16px;" onclick="streammingConnection()">세션 스트리밍</button>
+        <button id="btn-stream" class="basic-button" style="width: 180px; height: 50px; font-size: 16px;" onclick="sessionDelete()">세션 삭제 </button>
+        <h1></h1>
+   
+    </div>
+</body>
+
+</html>
