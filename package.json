@@ -4,8 +4,8 @@
   "description": "cirrus web server",
   "scripts": {
     "store_password": "node ./modules/authentication/db/store_password.js --usersFile=./modules/authentication/db/users.json",
-    "start": "npm install && node cirrus.js",
-    "build": "echo 'hello build'"
+    "start": "npm install",
+    "build": "yarn build"
   },
   "dependencies": {
     "axios": "^0.20.0",
